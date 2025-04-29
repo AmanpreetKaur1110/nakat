@@ -5,12 +5,13 @@
     height: 350px;
     align-items: center;
     position: relative;
-  
+
     img {
       width: 100%;
       height: 95%;
       object-fit: cover;
       margin-bottom: 5px;
+
     }
   
     button {
@@ -24,6 +25,8 @@
     &:hover {
       img {
         opacity: 0.8;
+        transform: scale(1.2);
+        transition: 3s;
       }
   
       button {
@@ -41,12 +44,12 @@
   
       .name {
         width: 90%;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
   
-      .price {
-        width: 10%;
-      }
+      // .price {
+      //   width: 10%;
+      // }
     }
   }
   

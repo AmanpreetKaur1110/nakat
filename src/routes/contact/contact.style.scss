@@ -1,0 +1,91 @@
+// src/routes/contact/contact.styles.scss
+.contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+  
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .contact-info {
+    h2 {
+      color: #e74c3c;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+  
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .business-hours {
+    margin-top: 2rem;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+  
+    h3 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .contact-form {
+    .form-group {
+      margin-bottom: 1.5rem;
+  
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+  
+      input, textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        transition: border 0.3s ease;
+  
+        &:focus {
+          outline: none;
+          border-color: #2c3e50;
+        }
+      }
+    }
+  }
+  
+  .submit-btn {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background: #1a252f;
+    }
+  }

@@ -11,8 +11,7 @@ const Category = () => {
     const { category } = useParams();
     const { categoriesMap } = useContext(CategoriesContext);
     const [products, setProducts] = useState(categoriesMap[category]);
-   
-    console.log(products)
+    
    
     useEffect(() => {
     setProducts(categoriesMap[category]);
@@ -22,6 +21,7 @@ const Category = () => {
        <Fragment>
             <h2 className='category-title'>{category.toUpperCase()}</h2>
             <div className='category-container'>
+              
             {products && products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}

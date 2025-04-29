@@ -1,0 +1,35 @@
+.header {
+    background: linear-gradient(to right, #2c3e50, #4b6cb7);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .navigation {
+      display: flex;
+      gap: 2.5rem;
+      text-align: left;
+  
+      a {
+        color: rgb(255, 243, 243);
+        text-decoration: none;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          color: #f3f2ec;
+        }
+  
+        &.highlight {
+          background-color: #e74c3c;
+          border-radius: 4px;
+          padding: 0.5rem 1rem;
+  
+          &:hover {
+            background-color: #c0392b;
+          }
+        }
+      }
+    }
+  }
