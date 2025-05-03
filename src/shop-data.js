@@ -241,7 +241,7 @@ const SHOP_DATA = [
     items: [
       {
         id: 36,
-        name: 'gift-box',
+        name: 'T-shirt',
         imageUrl: 'https://i.ibb.co/XYZ1234/gift-box.jpg',
         price: 1000,
       },
@@ -255,7 +255,25 @@ const SHOP_DATA = [
         id: 38,
         name: 'personalized-mug',
         imageUrl: 'https://i.ibb.co/XYZ9101/personalized-mug.jpg',
-        price: 500,
+        price: 850,
+      },
+      {
+        id: 39,
+        name: 'personalized-mug',
+        imageUrl: 'https://i.ibb.co/XYZ9101/personalized-mug.jpg',
+        price: 900,
+      },
+      {
+        id: 40,
+        name: 'personalized-mug',
+        imageUrl: 'https://i.ibb.co/XYZ9101/personalized-mug.jpg',
+        price: 1000,
+      },
+      {
+        id: 41,
+        name: 'personalized-mug',
+        imageUrl: 'https://i.ibb.co/XYZ9101/personalized-mug.jpg',
+        price: 1500,
       },
     ],
   }

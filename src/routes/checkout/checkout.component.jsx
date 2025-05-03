@@ -25,7 +25,7 @@ const Checkout = () => {
   const handleOrder = async () => {
     if (!currentUser) {
       alert('You must be signed in to place an order.');
-      navigate('/sign-in', { state: { from: '/checkout' } });
+      navigate('/auth', { state: { from: '/checkout' } });
       return;
     }
 
@@ -62,7 +62,7 @@ const Checkout = () => {
       ))}
 
       <span className='total'>Total: {'\u20B9'}{cartTotal}</span>
-      <Button type='submit'  onClick={handleOrder}>Order Here</Button>
+      <Button type='submit' onClick={handleOrder}>Order Here</Button>
       
     </div>
   );
