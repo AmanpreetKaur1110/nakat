@@ -1,4 +1,5 @@
 import { useState} from "react";
+import { useLocation, useNavigate } from "react-router-dom"; // ✅ make sure this is imported
 
 import FormInput from "../form-input/form-input.component";
 import Button, {BUTTON_TYPE_CLASSES} from "../button/button.component";
@@ -20,6 +21,10 @@ const defaultFormFields = {
 const SignInForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields)
     const { email, password } = formFields;
+
+    const location = useLocation();
+    const navigate = useNavigate();
+    const redirectPath = location.state?.from || '/';
 
 
     const resetFormFields = () => {

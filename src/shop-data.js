@@ -116,8 +116,8 @@ const SHOP_DATA = [
     items: [
       {
         id: 18,
-        name: 'family',
-        imageUrl: 'https://res.cloudinary.com/forallpromos/image/fetch/f_auto/https://www.forallgifts.com/sites/default/files/imagecache/585x585/images/products/1518883/72901_c.jpg',
+        name: 'flower art',
+        imageUrl: 'https://i.etsystatic.com/19585798/r/il/c6b5f8/2956357069/il_fullxfull.2956357069_76xx.jpg',
         price: 2000,
       },
       {
@@ -234,48 +234,33 @@ const SHOP_DATA = [
       },
     ],
   },
+
+
+ {
+  title: 'gifts',
+    items: [
+      {
+        id: 36,
+        name: 'gift-box',
+        imageUrl: 'https://i.ibb.co/XYZ1234/gift-box.jpg',
+        price: 1000,
+      },
+      {
+        id: 37,
+        name: 'birthday-frame',
+        imageUrl: 'https://i.ibb.co/XYZ5678/birthday-frame.jpg',
+        price: 750,
+      },
+      {
+        id: 38,
+        name: 'personalized-mug',
+        imageUrl: 'https://i.ibb.co/XYZ9101/personalized-mug.jpg',
+        price: 500,
+      },
+    ],
+  }
 ];
-//  {
-//   title: 'gifts',
-//     items: [
-//       {
-//         id: 36,
-//         name: 'Camo Down Vest',
-//         imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-//         price: 325,
-//       },
-//       {
-//         id: 37,
-//         name: 'Floral T-shirt',
-//      imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-//         price: 20,
-//       },
-//       {
-//         id: 38,
-//         name: 'Black & White Longsleeve',
-//         imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-//         price: 25,
-//       },
-//       {
-//         id: 39,
-//         name: 'Pink T-shirt',
-//         imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-//         price: 25,
-//       },
-//       {
-//         id: 40,
-//         name: 'Jean Long Sleeve',
-//         imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-//         price: 40,
-//       },
-//       {
-//         id: 41,
-//         name: 'Burgundy T-shirt',
-//         imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-//         price: 25,
-//       },
-//     ],
-//   },
-//  ];
+
+
 
 export default SHOP_DATA;

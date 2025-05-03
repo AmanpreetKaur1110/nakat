@@ -23,10 +23,4 @@ describe('button tests',() =>{
         expect(invertedButton).toHaveStyle('background-color: white') 
     });
 
-    // test('should be disable if loading is true' , () =>{
-    //     render(<Button isLoading={true} />);
-      
-    //     const buttonElemnt = screen.getByRole('button') ;
-    //     expect(buttonElemnt).toBeDisabled();
-    // });
 });

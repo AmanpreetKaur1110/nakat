@@ -31,7 +31,10 @@ const CheckoutItem = ({cartItem}) => {
             <span className='price'>{'\u20B9'}{price}</span>
             <div className='remove-button' onClick={clearItemHandler}>
                 &#10005;</div>
+             
         </div>
+
+        
     )
 }
 

@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter, Route, Routes } from 'react-router-dom';
+import { RouterProvider, createMemoryRouter } from 'react-router-dom';
 import { CategoriesContext } from '../../../contexts/categories.context';
-
 import Category from '../category.component';
 
 const mockCategoriesMap = {
@@ -14,24 +13,39 @@ const mockCategoriesMap = {
   ]
 };
 
-// Utility to render the component with context and routing
 const renderWithRouterAndContext = (category = 'oil-painting') => {
-  render(
+  const router = createMemoryRouter(
+    [
+      {
+        path: '/shop/:category',
+        element: <Category />,
+      },
+    ],
+    {
+      initialEntries: [`/shop/${category}`],
+      future: {
+        v7_relativeSplatPath: true,
+        v7_startTransition: true, 
+      },
+    }
+  );
+
+  return render(
     <CategoriesContext.Provider value={{ categoriesMap: mockCategoriesMap }}>
-      <MemoryRouter initialEntries={[`/shop/${category}`]}>
-        <Routes>
-          <Route path="/shop/:category" element={<Category />} />
-        </Routes>
-      </MemoryRouter>
+      <RouterProvider router={router} />
     </CategoriesContext.Provider>
   );
 };
 
 test('renders correct category title and product names', () => {
   renderWithRouterAndContext('oil-painting');
-
   expect(screen.getByText('OIL-PAINTING')).toBeInTheDocument();
-
   expect(screen.getByText(/road-side/i)).toBeInTheDocument();
   expect(screen.getByText(/birds/i)).toBeInTheDocument();
 });
+
+test('matches the snapshot for the category component', () => {
+  const { asFragment } = renderWithRouterAndContext('oil-painting');
+  expect(asFragment()).toMatchSnapshot();
+});
+

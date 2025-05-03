@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the snapshot for the category component 1`] = `
+<DocumentFragment>
+  <h2
+    class="sc-kpOvIu hGRBOl"
+  >
+    OIL-PAINTING
+  </h2>
+  <div
+    class="sc-gDpztx kRiyyP"
+  >
+    <div
+      class="product-card-container"
+    >
+      <img
+        alt="road-side"
+      />
+      <div
+        class="footer"
+      >
+        <span
+          class="name"
+        >
+          Name:- road-side
+        </span>
+        <span
+          class="price"
+        >
+          Rs.1000
+        </span>
+      </div>
+      <button
+        class="sc-dKREkF sc-dIMoHT bpYrpT jSjKlJ"
+      >
+        Addtocard 
+      </button>
+    </div>
+    <div
+      class="product-card-container"
+    >
+      <img
+        alt="birds"
+      />
+      <div
+        class="footer"
+      >
+        <span
+          class="name"
+        >
+          Name:- birds
+        </span>
+        <span
+          class="price"
+        >
+          Rs.1800
+        </span>
+      </div>
+      <button
+        class="sc-dKREkF sc-dIMoHT bpYrpT jSjKlJ"
+      >
+        Addtocard 
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
