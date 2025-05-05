@@ -45,6 +45,7 @@ const SignInForm = () => {
                 password
               );
               resetFormFields();
+              navigate(redirectPath, { replace: true });
         } catch (error) {
             switch (error.code) {
                 case 'auth/wrong-password':

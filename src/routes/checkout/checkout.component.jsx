@@ -4,7 +4,7 @@ import { db } from '../../utils/firebase/firebase.utils';
 import { collection, addDoc } from 'firebase/firestore';
 import { UserContext } from '../../contexts/user.context';
 import Button from '../../components/button/button.component';
-import {  useNavigate } from 'react-router-dom';
+import {  useNavigate , useLocation} from 'react-router-dom';
 
 
 import './checkout.style.scss';
