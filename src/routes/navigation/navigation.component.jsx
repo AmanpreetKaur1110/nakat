@@ -10,7 +10,7 @@ import { CartContext } from "../../contexts/cart.context";
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 import { NavigationContainer, NavLinks, NavLink, LogoContainer, MainNavigation ,LogoImage, FooterContainer,
-  SocialLinks, CopyrightText, SocialLink,LogoHeading } from './navigation.style.jsx';
+  SocialLinks, CopyrightText, SocialLink } from './navigation.style.jsx';
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 import '../../components/header/header.style.scss';
 
@@ -25,7 +25,6 @@ const Navigation = () => {
         <NavLinks>
         <LogoContainer to='/'>
         <LogoImage src={logo} alt="Company Logo" />
-        <LogoHeading>Kalaakari Gallery</LogoHeading>
         </LogoContainer>
           <MainNavigation>
             <Link to="/">Home</Link>
@@ -39,7 +38,7 @@ const Navigation = () => {
           {
             currentUser ? (
               <NavLink as='span' onClick={signOutUser} >
-              SIGNOUT</NavLink>)
+              SIGN OUT</NavLink>)
               : (<NavLink to='/auth'>
                 SIGNIN
               </NavLink>

@@ -5,7 +5,7 @@ export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  // padding: 0 50px;
   margin-bottom: 30px;
   background: linear-gradient(
     to right,
@@ -145,19 +145,5 @@ export const CopyrightText = styled.p`
   font-size: 0.9rem;
   opacity: 0.8;
 `;
-export const LogoHeading = styled.h1`
-  font-size: 2rem;
-  color: white;
-  margin-left: 1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
 
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.2rem;
-  }
-`;
 
